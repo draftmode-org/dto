@@ -1,0 +1,35 @@
+{
+    "name": "terrazza/dto",
+    "type" : "library",
+    "version": "1.0.0",
+    "description": "dto",
+    "license": "MIT",
+    "config" : {
+        "vendor-dir" : "plugin"
+    },
+    "authors": [
+        {
+            "name": "Peter Fux",
+            "email": "it@noframework.io"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "psr/container": "1.0.0",
+        "psr/log": "1.1.*"
+    },
+    "require-dev" : {
+        "phpunit/phpunit": "^9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Terrazza\\Component\\Dto\\" : "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Terrazza\\Component\\Dto\\Tests\\_Mocks\\" : "tests\\_Mocks"
+        }
+    },
+    "minimum-stability": "dev"
+}
